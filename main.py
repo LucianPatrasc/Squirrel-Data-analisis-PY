@@ -9,3 +9,10 @@ print(red_squirrels_count)
 print(black_squirrels_count)
 
 
+data_dict = {
+    "Fur Color":["Gray", "Cinnamon", "Black"],
+    "COunt":[grey_squirrels_count,red_squirrels_count,black_squirrels_count]
+}
+
+data_frame = pandas.DataFrame(data_dict)
+data_frame.to_csv("squirrel_count.csv")
